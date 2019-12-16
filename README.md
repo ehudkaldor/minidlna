@@ -12,7 +12,7 @@ run (after build):
 -p 8200:8200/tcp \
 -p 1900:1900/udp \
 --restart unless-stopped \
-ehudkaldor/minidlna`
+ehudkaldor/minidlna-rpi`
 
 comments:
 * -d runs a daemon
