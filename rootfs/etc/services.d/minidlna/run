@@ -1,6 +1,4 @@
-#!/bin/sh
-#fdmove -c 2 1
-#s6-envdir env
+#!/usr/bin/with-contenv sh
 
-echo "Starting minidlna server..."
-minidlnad -S
+printf "starting minidlnad server...\m"
+minidlnad -S -r -R -f /etc/minidlna/minidlna.conf
