@@ -17,7 +17,6 @@ EXPOSE 	  	8200
 COPY 		    rootfs /
 
 # RUN 		    echo "http://dl-3.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories && \
-RUN     mkdir /opt && \
-        apk update && \
+RUN     apk update && \
         apk upgrade apk && \
         apk add minidlna
